@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talent Engine | Recomendação inteligente de candidatos</title>
+    <meta name="description" content="A Talent Engine ajuda empresas a identificar candidatos mais compatíveis com suas vagas por meio de recomendações contextualizadas, explicáveis e orientadas à decisão humana.">
+    <meta name="theme-color" content="#12243D">
+    
+    <!-- Open Graph / Canonical / SEO configs via README, currently generic -->
+    <meta property="og:title" content="Talent Engine | Recomendação inteligente de candidatos">
+    <meta property="og:description" content="A Talent Engine ajuda empresas a identificar candidatos mais compatíveis com suas vagas por meio de recomendações contextualizadas, explicáveis e orientadas à decisão humana.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://usuario.github.io/nome-do-repositorio/"> <!-- Altere no setup final -->
+    
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="canonical" href="https://usuario.github.io/nome-do-repositorio/">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="#" class="logo" aria-label="Talent Engine - Início">
+                <img src="assets/img/logotipo.svg" alt="" aria-hidden="true" width="40" height="40">
+                <span>Talent Engine</span>
+            </a>
+            
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-expanded="false" aria-label="Abrir menu de navegação">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+            </button>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul>
+                    <li><a href="#inicio">Início</a></li>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#solucao">Solução</a></li>
+                    <li><a href="#diferenciais">Diferenciais</a></li>
+                    <li><a href="#incubacao">Incubação</a></li>
+                    <li><a href="#fundador">Fundador</a></li>
+                </ul>
+                <a href="#contato" class="btn btn-primary nav-btn">Fale conosco</a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <!-- Hero Section -->
+        <section id="inicio" class="hero">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <span class="badge fade-in">Startup incubada na Incubadora de Empresas da COPPE/UFRJ</span>
+                    <h1 class="fade-in">Talent Engine</h1>
+                    <p class="slogan fade-in">The future of talent discovery</p>
+                    <p class="hero-text fade-in">Recomendações de candidatos mais contextualizadas, explicáveis e eficientes para apoiar decisões humanas em recrutamento.</p>
+                    <div class="hero-buttons fade-in">
+                        <a href="#solucao" class="btn btn-primary">Conheça a solução</a>
+                        <a href="#sobre" class="btn btn-secondary">Sobre a Talent Engine</a>
+                    </div>
+                </div>
+                <div class="hero-visual fade-in">
+                    <div class="network-graphic" aria-hidden="true">
+                        <!-- Abstract SVG network representing candidates, jobs and connections -->
+                        <svg viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle cx="200" cy="200" r="150" stroke="#DED1BA" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+                            <circle cx="200" cy="200" r="100" stroke="#DED1BA" stroke-width="1" stroke-dasharray="4 4" opacity="0.5"/>
+                            <path d="M200 100 L270 130 L300 200 L270 270 L200 300 L130 270 L100 200 L130 130 Z" stroke="#DED1BA" stroke-width="2" opacity="0.3"/>
+                            <path d="M200 50 L200 100 M350 200 L300 200 M200 350 L200 300 M50 200 L100 200" stroke="#DED1BA" stroke-width="1"/>
+                            
+                            <!-- Nodes -->
+                            <circle cx="200" cy="200" r="25" fill="#12243D" stroke="#DED1BA" stroke-width="3"/>
+                            <circle cx="200" cy="100" r="15" fill="#12243D" stroke="#DED1BA" stroke-width="2"/>
+                            <circle cx="300" cy="200" r="15" fill="#12243D" stroke="#DED1BA" stroke-width="2"/>
+                            <circle cx="200" cy="300" r="15" fill="#12243D" stroke="#DED1BA" stroke-width="2"/>
+                            <circle cx="100" cy="200" r="15" fill="#12243D" stroke="#DED1BA" stroke-width="2"/>
+                            <circle cx="270" cy="130" r="10" fill="#DED1BA"/>
+                            <circle cx="270" cy="270" r="10" fill="#DED1BA"/>
+                            <circle cx="130" cy="270" r="10" fill="#DED1BA"/>
+                            <circle cx="130" cy="130" r="10" fill="#DED1BA"/>
+                            
+                            <!-- Check -->
+                            <path d="M190 200 L197 207 L210 193" stroke="#DED1BA" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre a Talent Engine -->
+        <section id="sobre" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Uma nova forma de descobrir talentos</h2>
+                </div>
+                <div class="section-content text-center max-w-800">
+                    <p class="lead">A Talent Engine é uma startup de tecnologia que desenvolve um sistema de recomendação de candidatos para vagas de emprego. Nossa proposta é ajudar empresas e equipes de recrutamento a identificar os profissionais mais adequados para cada oportunidade, considerando o contexto completo das candidaturas e os critérios definidos pela organização.</p>
+                    <p>O objetivo não é substituir recrutadores, mas reduzir o esforço empregado em tarefas repetitivas e oferecer informações mais organizadas para decisões que continuam sob responsabilidade humana.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- O problema -->
+        <section id="problema" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>A triagem tradicional ainda deixa bons candidatos para trás</h2>
+                </div>
+                <div class="grid grid-2-4">
+                    <div class="card">
+                        <h3>Alto volume</h3>
+                        <p>Uma única vaga pode receber centenas de candidaturas, tornando a análise manual demorada e custosa.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Limitação das palavras-chave</h3>
+                        <p>Profissionais qualificados podem ser descartados por utilizarem nomenclaturas diferentes para experiências ou competências equivalentes.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Falta de contexto</h3>
+                        <p>Competências, experiências, senioridade e formação precisam ser avaliadas em conjunto, e não como informações isoladas.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Sobrecarga do RH</h3>
+                        <p>O tempo dedicado à leitura inicial de currículos reduz a disponibilidade dos recrutadores para entrevistas, relacionamento e decisões estratégicas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- A Solução -->
+        <section id="solucao" class="section bg-primary text-white">
+            <div class="container">
+                <div class="grid grid-2 align-center">
+                    <div>
+                        <h2 class="title-white">Recomendações que consideram o conjunto da trajetória profissional</h2>
+                        <p class="lead">A Talent Engine cruza informações de candidatos e vagas para apresentar uma lista priorizada de profissionais com maior compatibilidade para cada oportunidade. A análise considera competências, experiências, senioridade, formação, idiomas e critérios personalizados pela empresa.</p>
+                        <p>A recomendação pode considerar os dois lados da relação: o quanto o candidato atende às necessidades da vaga e o quanto a oportunidade é compatível com o seu perfil profissional.</p>
+                        <div class="alert-box mt-4">
+                            <img src="assets/img/logotipo.svg" alt="" width="24" height="24" aria-hidden="true" style="filter: brightness(0) invert(1);">
+                            <span>A decisão final permanece com a equipe de recrutamento.</span>
+                        </div>
+                    </div>
+                    <div class="solution-visual">
+                        <div class="network-graphic-small" aria-hidden="true">
+                            <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <circle cx="100" cy="100" r="80" stroke="#DED1BA" stroke-width="0.5" stroke-dasharray="2 2" opacity="0.3"/>
+                                <path d="M100 20 L160 50 L180 100 L160 160 L100 180 L40 160 L20 100 L40 50 Z" fill="#DED1BA" opacity="0.05"/>
+                                <circle cx="100" cy="100" r="40" fill="#DED1BA" opacity="0.1"/>
+                                <circle cx="100" cy="100" r="10" fill="#DED1BA"/>
+                                <line x1="100" y1="100" x2="160" y2="50" stroke="#DED1BA" stroke-width="2"/>
+                                <circle cx="160" cy="50" r="6" fill="#DED1BA"/>
+                                <line x1="100" y1="100" x2="40" y2="160" stroke="#DED1BA" stroke-width="2"/>
+                                <circle cx="40" cy="160" r="6" fill="#DED1BA"/>
+                                <line x1="100" y1="100" x2="160" y2="160" stroke="#DED1BA" stroke-width="2"/>
+                                <circle cx="160" cy="160" r="6" fill="#DED1BA"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Como funciona -->
+        <section id="como-funciona" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Como funciona</h2>
+                </div>
+                <div class="steps-container">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <h3>Entendemos a oportunidade</h3>
+                        <p>A empresa define a vaga, seus requisitos e os critérios mais relevantes.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <h3>Analisamos as candidaturas</h3>
+                        <p>As informações profissionais são avaliadas de maneira contextual e consistente.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <h3>Priorizamos as compatibilidades</h3>
+                        <p>A equipe recebe uma lista organizada dos candidatos mais aderentes à oportunidade.</p>
+                    </div>
+                    <div class="step-connector"></div>
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <h3>O recrutador decide</h3>
+                        <p>As recomendações apoiam a análise humana, as entrevistas e a decisão final.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Diferenciais -->
+        <section id="diferenciais" class="section bg-light">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Tecnologia para apoiar pessoas</h2>
+                </div>
+                <div class="grid grid-2-3">
+                    <div class="card card-feature">
+                        <h4>Contexto além de palavras-chave</h4>
+                    </div>
+                    <div class="card card-feature">
+                        <h4>Compatibilidade entre candidatos e vagas</h4>
+                    </div>
+                    <div class="card card-feature">
+                        <h4>Critérios configuráveis para cada organização</h4>
+                    </div>
+                    <div class="card card-feature">
+                        <h4>Recomendações explicáveis</h4>
+                    </div>
+                    <div class="card card-feature">
+                        <h4>Consistência na triagem</h4>
+                    </div>
+                    <div class="card card-feature">
+                        <h4>Capacidade de lidar com grandes volumes</h4>
+                    </div>
+                    <div class="card card-feature card-feature-span">
+                        <h4>Supervisão humana durante o processo</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Público-alvo -->
+        <section id="publico" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Para organizações que precisam contratar com mais eficiência</h2>
+                </div>
+                <div class="grid grid-3">
+                    <div class="card text-center">
+                        <h3>Empresas</h3>
+                        <p>Organizações de médio e grande porte que administram várias vagas ou recebem um volume elevado de candidaturas.</p>
+                    </div>
+                    <div class="card text-center">
+                        <h3>Consultorias de RH</h3>
+                        <p>Empresas responsáveis por processos seletivos de diferentes clientes e que precisam aumentar sua capacidade de triagem.</p>
+                    </div>
+                    <div class="card text-center">
+                        <h3>Plataformas de recrutamento</h3>
+                        <p>Soluções que desejam incorporar recomendações mais contextualizadas à experiência de seus usuários.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Incubadora COPPE/UFRJ -->
+        <section id="incubacao" class="section highlight-section text-center">
+            <div class="container">
+                <div class="max-w-800 mx-auto">
+                    <!-- Text representation as there isn't a known authorized logo -->
+                    <div class="incubadora-logo">Incubadora de Empresas da COPPE/UFRJ</div>
+                    <h2>Uma startup incubada na COPPE/UFRJ</h2>
+                    <p class="lead">A Talent Engine integra o ecossistema da Incubadora de Empresas da COPPE/UFRJ. A incubação representa uma etapa importante para o amadurecimento do produto, a validação do modelo de negócio, a construção de parcerias e a aproximação com empresas interessadas em inovação.</p>
+                    <p>A conexão com o ambiente acadêmico e empresarial da UFRJ fortalece a proposta de transformar conhecimento científico e tecnológico em uma solução aplicável a problemas reais do mercado.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Fundador -->
+        <section id="fundador" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Sobre o fundador</h2>
+                </div>
+                <div class="founder-card">
+                    <div class="founder-photo">
+                        <!-- Discreta composição com as iniciais "NF" -->
+                        <div class="founder-initials">NF</div>
+                    </div>
+                    <div class="founder-info">
+                        <p>Natan da Silveira Ferreira é estudante do último ano de Ciência da Computação na Universidade Federal do Rio de Janeiro e fundador da Talent Engine. Possui experiência profissional em qualidade de software, automação de testes e desenvolvimento back-end. A Talent Engine nasceu da combinação entre sua formação acadêmica, sua experiência no desenvolvimento de sistemas e o interesse em aplicar conhecimentos da Computação a problemas reais do mercado.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA -->
+        <section id="contato" class="section bg-primary text-white text-center">
+            <div class="container">
+                <h2 class="title-white">Vamos transformar a descoberta de talentos?</h2>
+                <p class="lead max-w-800 mx-auto">A Talent Engine busca empresas, consultorias e plataformas interessadas em projetos-piloto, validação do produto e parcerias estratégicas.</p>
+                <div class="cta-buttons mt-4" id="cta-container">
+                    <!-- Botões adicionados dinamicamente via JS caso tenham contatos configurados -->
+                    <button class="btn btn-secondary fallback-btn" aria-disabled="true" style="opacity:0.7; cursor:default;" id="btn-fallback">Conheça a solução</button>
+                    <!-- Os botões com links serão injetados se configurados no siteConfig -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <img src="assets/img/logotipo.svg" alt="" aria-hidden="true" width="32" height="32" style="filter: brightness(0) invert(1);">
+                        <span>Talent Engine</span>
+                    </div>
+                    <p class="slogan-footer">The future of talent discovery</p>
+                    <p class="footer-subtitle mt-2">Startup incubada na Incubadora de Empresas da COPPE/UFRJ</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Navegação</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                        <li><a href="#solucao">Solução</a></li>
+                        <li><a href="#diferenciais">Diferenciais</a></li>
+                        <li><a href="#incubacao">Incubação</a></li>
+                        <li><a href="#fundador">Fundador</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact" id="footer-contact">
+                    <!-- Injetado por JS caso configurado -->
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Talent Engine. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
